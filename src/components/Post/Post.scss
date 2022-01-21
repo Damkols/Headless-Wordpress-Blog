@@ -1,0 +1,47 @@
+body{
+  height: calc(100vh - 60px);
+}
+
+.posts{
+  display: flex;
+  flex-direction: column;
+}
+
+  .posts > *+*{
+    margin-top: max(2%, 0.5em);
+  }
+
+  .card > *+*{
+    margin-top: max(2%, 0.5em);
+  }
+
+  .card{
+    background: #fff;
+    color: #101010;
+    width: 80%;
+    margin-inline: auto;
+    border: 2px solid blue;
+    padding: max(3vh, 1em) 1.5rem;
+
+    img{
+    }
+
+    .cardContent > *+*{
+      margin-top: max(2%, 0.5em);
+    }
+
+    .cardContent{
+      h1{
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+      }
+
+      p{
+          font-family: "Raleway", sans-serif;
+      }
+
+      button{
+        margin-top: 0.7em;
+      }
+    }
+}
