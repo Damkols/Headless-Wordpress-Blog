@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
 .navigation {
   height: 50px;
-  width: 90%;
+  width: min(90%, 1000px);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -12,20 +15,20 @@
 }
 
 .navigation .navLogo > a {
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none;
   color: #101011;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .navigation > .nav-items > a {
-  font-size: 16px;
+  font-size: 18px;
   color: #101011;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 3rem;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .navigation .btn-mobile {

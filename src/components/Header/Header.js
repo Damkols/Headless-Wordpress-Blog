@@ -18,8 +18,11 @@ const Header = () => {
         <Link to="/">
           <a onClick={() => setIsOpen(!isOpen)}>Home</a>
         </Link>
+        <Link to="/blog">
+          <a onClick={() => setIsOpen(!isOpen)}>Blog</a>
+        </Link>
         <Link to="/about">
-          <a onClick={() => setIsOpen(!isOpen)}>About</a>
+          <a onClick={() => setIsOpen(!isOpen)}>About Me</a>
         </Link>
         <Link to="/contact">
           <a onClick={() => setIsOpen(!isOpen)}>Contact</a>

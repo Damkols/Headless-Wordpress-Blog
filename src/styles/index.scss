@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.home {
+  width: min(95%, 1000px);
+  margin: 0 auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  h1 {
+    font-weight: 700;
+    animation: 1s ease 0s 1 normal none running;
+    color: #101010;
+    letter-spacing: 0.5px;
+    font-size: clamp(1.75rem, 4vw + 1rem, 3.25rem);
+    margin-bottom: 1.666rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    line-height: 1.1;
+    text-align: left;
+  }
+
+  .links {
+    width: min(90%, 900px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    .social {
+      margin-right: max(5%, 0.5rem);
+      text-decoration: none;
+      font-size: clamp(0.3rem, 1vw + 0.2rem, 1.75rem);
+
+      img {
+        color: #fff;
+      }
+      p {
+        font-family: "Montserrat", sans-serif;
+        color: coral;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+
+  .goto_blog {
+    margin-top: 10vh;
+    a {
+      border: 1px solid transparent;
+      border-radius: 10px;
+      background: coral;
+      padding: clamp(0.5rem, 1vw + 0.5rem, 1rem)
+        clamp(0.5rem, 1vw + 0.5rem, 2.5rem);
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(0.3rem, 1vw + 0.4rem, 1rem);
+      color: #101010;
+    }
+  }
+}

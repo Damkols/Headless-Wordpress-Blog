@@ -4,6 +4,7 @@ import React from "react";
 import Layout from "../../Layouts/Layout";
 import Seo from "../Seo/Seo";
 import innertext from "innertext";
+import "./NewPost.scss";
 
 const NewPost = ({ data }) => {
   const post = data.allWpPost.nodes[0];
@@ -22,9 +23,11 @@ const NewPost = ({ data }) => {
         image={siteMetadataImage}
         keywords={siteKeyword}
       />
-      <div>
+      <div className="container">
+        <div className="image">
+          {image && <GatsbyImage image={getImage(image)} />}
+        </div>
         <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-        {image && <GatsbyImage image={getImage(image)} />}
         <p dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
     </Layout>
