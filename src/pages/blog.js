@@ -4,8 +4,8 @@ import Layout from "../Layouts/Layout";
 import AllPosts from "../components/AllPosts/AllPosts";
 
 const blog = ({ data }) => {
-  const showPosts = data.allWpPost.nodes.map((node) => (
-    <div className="posts" key={node.slug}>
+  const showPosts = data.allWpPost.nodes.map((node, index) => (
+    <div className="posts" key={index}>
       <AllPosts
         title={node.title}
         excerpt={node.excerpt}
@@ -33,7 +33,12 @@ export const pageQuery = graphql`
           node {
             localFile {
               childImageSharp {
-                gatsbyImageData(formats: WEBP, placeholder: BLURRED)
+                gatsbyImageData(
+                  formats: WEBP
+                  placeholder: BLURRED
+                  height: 800
+                  width: 400
+                )
               }
             }
           }

@@ -2,10 +2,10 @@ import React from "react";
 import Layout from "../Layouts/Layout";
 import { Link } from "gatsby";
 import "../styles/index.scss";
-import resume from "../assets/file-solid.svg";
-import github from "../assets/github-brands.svg";
-import linkedin from "../assets/linkedin-in-brands.svg";
-import twitter from "../assets/twitter-brands.svg";
+import resume from "../assets/bxs-file-blank.svg";
+import github from "../assets/bxl-github.svg";
+import linkedin from "../assets/bxl-linkedin.svg";
+import twitter from "../assets/bxl-twitter.svg";
 
 const IndexPage = () => {
   const socialLinks = [

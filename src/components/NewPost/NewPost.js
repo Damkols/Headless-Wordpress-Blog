@@ -53,7 +53,13 @@ export const query = graphql`
           node {
             localFile {
               childImageSharp {
-                gatsbyImageData(formats: WEBP, placeholder: BLURRED)
+                gatsbyImageData(
+                  formats: WEBP
+                  placeholder: BLURRED
+                  height: 600
+                  width: 1000
+                  aspectRatio: 0.5
+                )
               }
             }
             sourceUrl

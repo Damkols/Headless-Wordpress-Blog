@@ -1,5 +1,6 @@
 const path = require(`path`);
 //import NewPost from './src/components/NewPost/NewPost'
+//`${__dirname}/src/pages/`
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
