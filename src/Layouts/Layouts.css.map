@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAGE,kBAHgB,CAGhB,mBAAmB,CAAC;EAClB,MAAM,EAAE,aAAa;CACtB",
-    "sources": [
-        "Layouts.scss"
-    ],
-    "names": [],
-    "file": "Layouts.css"
-}

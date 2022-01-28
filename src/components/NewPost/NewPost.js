@@ -15,20 +15,24 @@ const NewPost = ({ data }) => {
   const keyword = data.allWpPost.nodes[0].categories;
   const siteKeyword = keyword.nodes.map((res) => res.name).join(", ");
 
+  console.log(post);
+  console.log(image);
+
   return (
     <Layout>
-      <Seo
-        title={innertext(post.title)}
-        description={innertext(post.excerpt)}
-        image={siteMetadataImage}
-        keywords={siteKeyword}
-      />
       <div className="container">
+        <Seo
+          title={innertext(post.title)}
+          description={innertext(post.excerpt)}
+          image={siteMetadataImage}
+          keywords={siteKeyword}
+        />
         <div className="image">
           {image && <GatsbyImage image={getImage(image)} />}
         </div>
-        <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-        <p dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div className="content">
+          <p dangerouslySetInnerHTML={{ __html: post.content }} />
+        </div>
       </div>
     </Layout>
   );
@@ -58,7 +62,6 @@ export const query = graphql`
                   placeholder: BLURRED
                   height: 600
                   width: 1000
-                  aspectRatio: 0.5
                 )
               }
             }
