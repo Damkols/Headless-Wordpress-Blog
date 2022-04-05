@@ -1,12 +1,11 @@
 .container {
-  width: min(90%, 1000px);
-  height: 90vh;
+  width: min(95%, 1000px);
+  // height: 90vh;
 }
 
 .contact {
-  background: black;
   width: 100%;
-  margin: 0 20px;
+  margin: 3rem 1.25rem;
   @media (max-width: 500px) {
     margin: 10px;
   }
@@ -22,6 +21,14 @@
   }
   @media (max-width: 500px) {
     margin: 20px;
+  }
+
+  .submit {
+    border: 2px solid transparent;
+    background: coral;
+    color: #101010;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
   }
 }
 
@@ -39,8 +46,12 @@
   font-size: 16px;
   outline: none;
   padding: 10px;
+  margin: 10px 0;
   border: 1px solid transparent;
-  height: 50px;
+  border-bottom: 5px solid #101010;
+  height: 40px;
+  outline: none;
+  background-color: rgb(249, 249, 249);
   @media (max-width: 500px) {
     font-size: 14px;
   }
@@ -79,6 +90,8 @@
   height: 200px;
   outline: none;
   border: 1px solid transparent;
+  background-color: rgb(249, 249, 249);
+  border-bottom: 5px solid #101010;
 
   @media (max-width: 500px) {
     font-size: 14px;

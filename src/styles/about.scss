@@ -2,11 +2,11 @@
 
 .about {
   height: 80vh;
-  width: min(90%, 1000px);
+  width: min(95%, 1000px);
   display: flex;
   flex-direction: column;
   text-align: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 1.5rem auto;
 
   h1 {
